@@ -1,0 +1,42 @@
+body{
+    background-color: #DFD5A5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.744);
+    color: white;
+    display: flex;
+    height:fit-content;
+    padding: 10px;
+    gap: 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+.song-title{
+    font-size: 17px;
+    font-style: oblique;
+}  
+.estado{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+#footer{
+    color: white;
+    position: relative;
+}
+#header{
+    background-color: #BCB8B1 ;
+    padding: 10px;
+    margin-top: 15px;
+}
+#header a{
+    text-decoration: none;
+    text-decoration-color: black;
+    color: #463F3A;
+}
+
+
