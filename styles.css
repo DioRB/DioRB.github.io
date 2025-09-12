@@ -24,19 +24,44 @@ body{
 .estado{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
 }
-#footer{
-    color: white;
-    position: relative;
-}
-#header{
-    background-color: #BCB8B1 ;
-    padding: 10px;
-    margin-top: 15px;
-}
-#header a{
-    text-decoration: none;
-    text-decoration-color: black;
-    color: #463F3A;
+
+.header {
+display: flex;
+justify-content: space-around;
+align-items: center;
+background: #333;
+color: white;
+padding: 10px;
 }
 
+.menu{
+      display: flex;
+      gap: 20px;
+}
 
+.hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+@media (max-width: 768px) {
+    .menu {
+    display: none; /* ocultar menú normal */
+    }
+
+    .hamburger {
+    display: block;
+    }
+
+    .menu.active {
+    display: flex;
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    }
+
+}

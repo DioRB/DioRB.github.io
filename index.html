@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
         <p id="status"class="estado">🔄 Cargando...</p>
         <p id="listen"></p>
@@ -15,13 +16,29 @@
         </a>    
         <h2 id="track" class="song-title">Cargando...</h2>
     </div>
-    <div id="header">
-        <a href="">Música</a>
-        <a href="">Peliculas</a>
-        <a href="">Proyectos</a>
-        
-    </div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
+<header class="header">
+    <nav>
+        <div class="menu" id="menu">
+            <a href="">About</a>
+            <a href="">Contactos</a>
+            <a href="">Proyectos</a>
+        </div>
+        <div class="hamburger" id="hamburger">☰</div>
+    </nav>
+    </header>
+
+<script>
+
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    });
+</script>
+
 </body>
 </html>
