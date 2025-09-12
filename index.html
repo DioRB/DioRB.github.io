@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Última Canción en Last.fm</title>
+    <title>Diego Alejandro Robayo</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -21,12 +22,12 @@
 
 <header class="header">
     <nav>
+        <div class="hamburger" id="hamburger">☰</div>
         <div class="menu" id="menu">
             <a href="">About</a>
-            <a href="">Contactos</a>
             <a href="">Proyectos</a>
         </div>
-        <div class="hamburger" id="hamburger">☰</div>
+
     </nav>
     </header>
 
@@ -38,7 +39,21 @@
     hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
     });
+
+      window.addEventListener("load", function() {
+    
+    window.scrollTo(0, 500);
+    });
 </script>
+
+<div class="media">
+    <i class="fa-brands fa-spotify" style="color: #abbcd8;"></i>
+</div>
+
+
+<div class="footer">
+© 2025 Diego Alejandro Robayo
+</div>
 
 </body>
 </html>

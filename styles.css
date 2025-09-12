@@ -1,9 +1,6 @@
 body{
-    background-color: #DFD5A5;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+background: #333;
+margin:0px;
 }
 .container {
     font-family: Arial, sans-serif;
@@ -13,8 +10,10 @@ body{
     display: flex;
     height:fit-content;
     padding: 10px;
-    gap: 50px;
+    gap: 45px;
     border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     align-items: center;
 }
 .song-title{
@@ -26,28 +25,48 @@ body{
 }
 
 .header {
-display: flex;
-justify-content: space-around;
-align-items: center;
-background: #333;
-color: white;
-padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.header div{
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+    margin-right: 40px;
 }
 
 .menu{
       display: flex;
       gap: 20px;
+
+}
+.menu a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.menu a:hover{
+    border-bottom: 2px solid  rgb(149, 94, 94);
+    color:black
 }
 
 .hamburger {
       display: none;
+      position: relative;
+      left: 0;
       font-size: 24px;
       cursor: pointer;
     }
 
 @media (max-width: 768px) {
     .menu {
-    display: none; /* ocultar menú normal */
+    display: none;
     }
 
     .hamburger {
@@ -58,10 +77,27 @@ padding: 10px;
     display: flex;
     flex-direction: column;
     background: #444;
-    position: absolute;
-    top: 50px;
+    position:static;
     left: 0;
-    right: 0;
+    right:auto;
     }
 
+}
+
+.footer {
+    color: rgb(102, 102, 102);
+    text-align: left;
+    padding: 15px;
+    bottom: 0;
+    width: 60%;
+    position: fixed;          
+    bottom: 0;               
+    left: 50%;               
+    transform: translateX(-50%);
+}
+
+.media{
+    height: fit-content;
+    max-width: fit-content;
+    min-width: 40%;
 }
