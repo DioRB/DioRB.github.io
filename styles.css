@@ -18,6 +18,27 @@ margin:0px;
     flex-wrap: wrap;
     justify-content: left;
 }
+
+@media (max-width: 768px) {
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.744);
+    color: white;
+    display: flex;
+    height:fit-content;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+}
+
+
 .song-title{
     font-size: 17px;
     font-style: oblique;
@@ -54,7 +75,7 @@ margin:0px;
     margin-top: 20px;
 }
 .menu a:hover{
-    border-bottom: 2px solid  rgb(149, 94, 94);
+    border-bottom: 2px solid  #543558;
     color:black;
     transition: all 0.2s ease;
 }
@@ -90,7 +111,6 @@ margin:0px;
 .footer {
     color: rgb(102, 102, 102);
     text-align: left;
-    padding: 15px;
     bottom: 0;
     width: 60%;
     position: fixed;          
@@ -101,7 +121,7 @@ margin:0px;
 
 .media{
     position: fixed;
-    bottom: 20%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
