@@ -16,24 +16,25 @@
             <a href="">About</a>
             <a href="">Proyectos</a>
         </div>
-
     </nav>
-    </header>
+</header>   
 
 <script>
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
 
-    const hamburger = document.getElementById("hamburger");
-    const menu = document.getElementById("menu");
-
-    hamburger.addEventListener("click", () => {
+  hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
-    });
 
-      window.addEventListener("load", function() {
-    
-    window.scrollTo(0, 500);
-    });
+    if (menu.classList.contains("active")) {
+      hamburger.textContent = "✖";
+    } else {
+      hamburger.textContent = "☰";
+    }
+  });
 </script>
+
+
 
 <div class="media">
     <a href="https://open.spotify.com/user/d155338fv3urs3qp0tylh0lzm?si=a27eee54966d435f"><i class="fa-brands fa-spotify fa-2xl iconos"></i></a>

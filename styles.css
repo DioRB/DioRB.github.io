@@ -2,50 +2,6 @@ body{
 background: #333;
 margin:0px;
 }
-.container {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color:rgba(0, 0, 0, 0.744);
-    color: white;
-    display: flex;
-    height:fit-content;
-    padding: 10px;
-    gap: 45px;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: left;
-}
-
-@media (max-width: 768px) {
-.container {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color:rgba(0, 0, 0, 0.744);
-    color: white;
-    display: flex;
-    height:fit-content;
-    padding: 10px;
-    gap: 10px;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: left;
-}
-}
-
-
-.song-title{
-    font-size: 17px;
-    font-style: oblique;
-}  
-.estado{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-}
 
 .header {
     border-radius: 10px;
@@ -56,15 +12,14 @@ margin:0px;
 }
 
 .header div{
-    margin-left: auto;
-    margin-right: 0;
-    width: fit-content;
     margin-right: 40px;
 }
 
 .menu{
-      display: flex;
-      gap: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; 
+  margin-right: 40px;   
 
 }
 .menu a{
@@ -89,24 +44,47 @@ margin:0px;
     }
 
 @media (max-width: 768px) {
-    .menu {
-    display: none;
-    }
+  .menu {
+    position: fixed;
+    inset: 0;
+    background-color: wheat;
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    justify-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
 
-    .hamburger {
+
+  .menu.active {
+    transform: translateX(0); 
+    margin: 0;
+  }
+
+  .hamburger {
     display: block;
-    }
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000;
+    position: relative;
+  }
 
-    .menu.active {
-    display: flex;
-    flex-direction: column;
-    background: #444;
-    position:static;
-    left: 0;
-    right:auto;
-    }
 
+  .menu a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    align-items: center;
+  }
+
+  .menu a:hover {
+    color: #543558;
+    transition: all 0.2s ease;
+  }
 }
+
+
 
 .footer {
     color: rgb(102, 102, 102);
